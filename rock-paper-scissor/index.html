@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="flex items-center justify-center h-screen">
+
+    <div class="border rounded-2xl p-6 flex flex-col gap-4 items-center">
+
+        <select id="values" class="border rounded p-2">
+            <option value="rock">Rock</option>
+            <option value="paper">Paper</option>
+            <option value="scissor">Scissor</option>
+        </select>
+
+        <button onclick="playGame()"
+                class="bg-red-500 text-white px-4 py-2 rounded">
+            Play Game
+        </button>
+
+        <div id="player"></div>
+        <div id="system"></div>
+        <div id="resultRes" class="font-bold text-lg"></div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
